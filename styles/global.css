@@ -9,11 +9,11 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   background: linear-gradient(
-      to bottom,
-      transparent,
-      transparent
+      to bottom right,
+      #57f138,
+      #6ee06a,
+      #6feb59
     )
-    greenyellow;
 }
 
 @media (min-width: 620px){

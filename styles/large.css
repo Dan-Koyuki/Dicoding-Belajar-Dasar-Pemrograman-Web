@@ -4,8 +4,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #333;
-  color: white;
+  background: linear-gradient(to bottom right, #dddddd, #ffffff);
+  color: rgb(0, 0, 0);
 }
 
 .logo-container {
@@ -42,7 +42,7 @@
   .menu-links a {
     margin: 0 0.5rem;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
   }
   
 }
@@ -61,4 +61,9 @@
 
 .my-2{
   margin: 0 0.5rem;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
 }
