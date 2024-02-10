@@ -1,1 +1,28 @@
 /* screen width between 768px - 1024px */
+@media screen and (max-width: 1024px) {
+  .menu-links {
+    display: none; /* Hide menu links by default on smaller screens */
+  }
+
+  .burger-menu {
+    display: block; /* Show burger menu on smaller screens */
+  }
+
+  .menu-links.active {
+    display: flex; /* Show menu links when burger menu is clicked */
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Adjust as needed */
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-links a{
+    margin: 0.5rem 0;
+    color: white;
+    text-decoration: none;
+  }
+}

@@ -1,6 +1,5 @@
 /* Screen width below 640px */
-h
-tml {
+html {
   margin: 0 !important;
   padding: 0 !important;
 }
@@ -19,40 +18,4 @@ body {
 
 @media (min-width: 620px){
   
-}
-
-.navbar {
-  height: 3rem;
-  padding: 0.5rem;
-  border: 1px black solid;
-  background: black;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-
-.logo-container {
-  display: flex;
-}
-
-.logo {
-  width: 50px;
-  height: auto;
-}
-
-
-.flex{
-  display: flex;
-}
-
-.justify-center{
-  justify-content: center;
-}
-
-.items-center{
-  align-items: center;
-}
-
-.my-2{
-  margin: 0 0.5rem;
 }

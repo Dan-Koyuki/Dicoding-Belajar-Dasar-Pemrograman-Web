@@ -5,29 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Atlas Mobilizer</title>
   <link rel="stylesheet" href="./styles/global.css">
+  <link rel="stylesheet" href="./styles/small.css">
+  <link rel="stylesheet" href="./styles/medium.css">
+  <link rel="stylesheet" href="./styles/large.css">
 </head>
 <body>
   <header>
     <nav class="navbar">
       <div class="logo-container">
         <img class="logo" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707302836/Atlas%20Mobilizer/ecyf6rpow9cgvqqz33bw.png" />
-        <p>Atlas Mobilizer</p> 
+        <p>Atlas Mobilizer</p>
       </div>
-      <div class="flex justify-center items-center">
-        <a class="my-2 border-none text-white" href="#Intro & App Screenshot">About</a>
-        <a class="my-2" href="./public/html/guide.html">Guide</a>
-        <a class="my-2" href="#GettingStarted">Download</a>
-
-        <!-- Burger Menu -->
-        <a class="my-2" href="./public/html/changeLog.html">Change Log</a>
-        <a class="my-2" href="https://dan-koyuki.github.io/Mobile-Native_Atlas-Mobilizer/">Privacy Policy</a>
-        <a class="my-2" href="#Review">Leave a Review</a>
-        <a class="my-2" href="https://dan-koyuki-profile.vercel.app">About Dev</a>
+      <div class="menu-container">
+        <a class="burger-menu" href="#" onclick="toggleMenu()">☰</a>
+        <div class="menu-links">
+          <a class="my-2 border-none text-white" href="#Intro & App Screenshot">About</a>
+          <a class="my-2" href="./public/html/guide.html">Guide</a>
+          <a class="my-2" href="#GettingStarted">Download</a>
+          <!-- Burger Menu -->
+          <a class="my-2" href="./public/html/changeLog.html">Change Log</a>
+          <a class="my-2" href="https://dan-koyuki.github.io/Mobile-Native_Atlas-Mobilizer/">Privacy Policy</a>
+          <a class="my-2" href="#Review">Leave a Review</a>
+          <a class="my-2" href="https://dan-koyuki-profile.vercel.app">About Dev</a>
+        </div>
       </div>
     </nav>
   </header>
-  <main>
 
+  <main>
     <section id="Intro&App Screenshot">
       <article>
         <h1>Atlas Mobilizer - Your Ultimate MongoDB Companion on the Go!</h1>
@@ -71,9 +76,9 @@
     <section id="Guide">
       <!-- some basic thing can be done in app -->
       <!-- tutorial -->
-    </section>
-    
+    </section>  
   </main>
+
   <footer>
     <div id="Review"></div>
     <!-- contact -->
@@ -83,5 +88,12 @@
       <img src="https://pluspng.com/img-png/get-it-on-google-play-png-apple-and-the-apple-logo-are-trademarks-of-apple-inc-registered-in-the-u-s-and-other-countries-app-store-is-a-service-mark-of-apple-inc-registered-in-826.png" />
     </a>
   </footer>
+
+  <script>
+    function toggleMenu() {
+      const menuLinks = document.querySelector('.menu-links');
+      menuLinks.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
