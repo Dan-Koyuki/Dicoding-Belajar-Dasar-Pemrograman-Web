@@ -1,5 +1,5 @@
 /* screen width between 768px - 1024px */
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .menu-links {
     display: none; /* Hide menu links by default on smaller screens */
   }
@@ -137,5 +137,44 @@
     to {
         opacity: 1;
     }
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem auto;
+    width: 50%;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .contact-icons {
+    width: 25px;
+    margin: 0 0.5rem;
+  }
+
+  .guide-sidebar {
+    display: none;
+  }
+
+  .guide-container{
+    display: flex;
+  }
+
+  .guide-content {
+    margin: 0 1rem;
+
+    p, li{
+      margin: 0 2rem;
+      font-size: 20px;
+    }
+  }
+
+  .guide-title {
+    margin-bottom: 0.5rem;
   }
 }

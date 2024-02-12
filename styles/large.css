@@ -116,4 +116,48 @@
         opacity: 1;
     }
   }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem auto;
+    width: 50%;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .contact-icons {
+    width: 35px;
+    margin: 0 0.5rem;
+  }
+
+  .guide-container{
+    display: flex;
+  }
+
+  .guide-sidebar{
+    display: block;
+    width: 20%;
+    background: linear-gradient(to bottom right, #dddddd, #ffffff);
+    border-right: 5px black solid;
+    padding: 4rem 2rem;
+  }
+
+  .guide-content {
+    margin: 0 1rem;
+    width: 70%;
+
+    p, li{
+      margin: 0 2rem;
+      font-size: 20px;
+    }
+  }
+
+  .guide-title {
+    margin-bottom: 0.5rem;
+  }
 }

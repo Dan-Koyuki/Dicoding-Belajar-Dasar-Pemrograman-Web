@@ -28,6 +28,9 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
+  text-decoration: none;
+  border-bottom: none;
+  color: black;
 }
 
 .logo {
@@ -45,4 +48,12 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom right, #dddddd, #ffffff);
+  padding: auto;
+  align-items: center;
 }

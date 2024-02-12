@@ -5,10 +5,132 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Atlas Mobilizer: Guide</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-  <script src='main.js'></script>
+  <link rel="stylesheet" href="../../styles/global.css">
+  <link rel="stylesheet" href="../../styles/small.css">
+  <link rel="stylesheet" href="../../styles/medium.css">
+  <link rel="stylesheet" href="../../styles/large.css">
 </head>
 <body>
-  <p>Test, here is guide</p>
+  <header class="sticky">
+    <nav class="navbar">
+      <div>
+        <a href="../../index.html" class="logo-container">
+          <img class="logo" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707302836/Atlas%20Mobilizer/ecyf6rpow9cgvqqz33bw.png" />
+          <h1>Atlas Mobilizer</h1>
+        </a>
+      </div>
+      <div class="menu-container">
+        <a class="burger-menu" href="#" onclick="toggleMenu()">
+          <img src="https://res.cloudinary.com/dankoyuki/image/upload/v1707712791/Icons/qngboodwnsd5cakuuj0j.png"/>
+        </a>
+        <div class="menu-links">
+          <a href="./public/html/guide.html">Guide</a>
+          <a href="https://dan-koyuki.github.io/Mobile-Native_Atlas-Mobilizer/">Privacy Policy</a>
+          <a href="https://dan-koyuki-profile.vercel.app">About Dev</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="guide-container">
+    <div class="guide-sidebar">
+      <h3>This Guide included:</h3>
+      <ul>
+        <li>MongoDB Explanation</li>
+        <li>Creating Atlas Mobilizer Account</li>
+        <li>Getting Connection String</li>
+        <li>Database Overview</li>
+        <li>Collection Overview</li>
+        <li>Document Overview</li>
+      </ul>
+    </div>
+
+    <div class="guide-content">
+      <!-- Content here -->
+      <article>
+        <h1 class="guide-title">1. MongoDB</h1>
+        <p>MongoDB is a NoSQL database management system characterized by its document-oriented architecture. Unlike traditional relational databases, MongoDB stores data in flexible, JSON-like documents within collections. It offers high scalability, performance, and agility, making it suitable for handling large volumes of data and dynamic applications. With its support for ad-hoc queries, indexing, and replication, MongoDB caters to various use cases ranging from small-scale projects to enterprise-level applications.</p>
+        <p>More of MongoDB at <a href="https://www.mongodb.com/">here</a>.</p>
+        <p>Get a Free Account <a href="https://account.mongodb.com/account/login">here</a>.</p>
+        <h1 class="guide-title">2. Atlas Mobilizer Account</h1>
+        <p>To access Atlas Mobilizer, users can effortlessly sign up by providing their email and choosing a secure password. This straightforward process merely requires entering the email and password details, followed by a simple click on the "Sign Up" button.</p>
+        <p>Upon completing the signup form, users are seamlessly logged in, granting them immediate access to the full suite of Atlas Mobilizer's features and capabilities.</p>
+        <h1 class="guide-title">3. Getting Connection String</h1>
+        <p>The MongoDB connection string is like a map that guides your application to where the database is located. It's a URI (Uniform Resource Identifier) that contains all the information needed for application to connect to a MongoDB database instance.</p>
+        <p>To get MongoDB Connection String, you can follow the following steps:</p>
+        <ul>
+          <li>Create Account at MongoDB.com or click <a href="https://account.mongodb.com/account/login">here</a>.</li>
+          <li>Complete the registration step.</li>
+          <li>Create a Deployment.</li>
+          <li>Setting Database User. Remember the username and password! and click "Create User".</li>
+          <li>On IP Address setting, click "Add My Current IP Address" or you can put 0.0.0.0/0 to connect from anywhere (not recommended).</li>
+          <li>Click "Finish and Close" and then "Go to Overview".</li>
+          <li>At Overview Screen, find and click "Connect" button side of "EDIT CONFIGURATION" button.</li>
+          <li>Choose Drivers.</li>
+          <li>Choose Node.js aling with the latest version.</li>
+          <li>Copy Connection String below "Add your connection string into your application code", make sure to change username and password with User that has been created in previous step.</li>
+          <li>Paste the Connection String to Atlas Mobilizer Connection Setting Screen.</li>
+          <li>Congratulation! Atlas Mobilizer Ready to Use.</li>
+        </ul>
+        <h1 class="guide-title">4. Database Overview</h1>
+        <p>A database is like a library for storing and organizing data in a structured manner. It's a software system that allows users to create, read, update, and delete data. Here are some key points about databases:</p>
+        <ol>
+          <li><strong>Structured Storage:</strong> Databases organize data into tables, documents, or key-value pairs, depending on the type of database. This structure helps maintain consistency and facilitates efficient data retrieval.</li>
+          <li><strong>Data Management:</strong> Databases provide mechanisms for managing data, including adding new records, modifying existing ones, and deleting unwanted data.</li>
+          <li><strong>Data Retrieval:</strong> Users can query databases to retrieve specific information using query languages like SQL (Structured Query Language) for relational databases or NoSQL query languages for non-relational databases.</li>
+          <li><strong>Concurrency Control:</strong> Databases support concurrent access by multiple users or applications while ensuring data integrity through mechanisms like transactions and locking.</li>
+          <li><strong>Data Security:</strong> Databases offer security features to control access to data, including user authentication, authorization, and encryption to protect sensitive information.</li>
+          <li><strong>Scalability and Performance:</strong> Databases are designed to handle large volumes of data and high throughput, with features like indexing, caching, and replication to improve performance and scalability.</li>
+        </ol>
+        <h1 class="guide-title">5. Collection Overview</h1>
+        <p>Collections in a database are akin to folders in a filing cabinet—they're used to organize and group related documents or records. Here's a concise overview:</p>
+        <ol>
+          <li><strong>Grouping of Documents:</strong> In databases like MongoDB or document-oriented databases, collections are containers for storing multiple documents. Each document typically represents a single record or entity, and collections help organize these documents based on their similarities or relationships.</li>
+          <li><strong>Schema Flexibility:</strong> Unlike tables in relational databases where each row follows a fixed schema, documents within a collection can have varying structures. This flexibility allows for the storage of heterogeneous data within the same collection.</li>
+          <li><strong>Atomic Operations:</strong> Collections support atomic operations, meaning operations on individual documents within a collection are atomic—that is, they either fully succeed or fail without partial changes. This ensures data consistency and integrity.</li>
+          <li><strong>Indexing:</strong> Collections can be indexed to improve query performance. Indexes allow for faster retrieval of documents based on specified fields, similar to an index in a book speeding up searches for specific topics.</li>
+          <li><strong>Scalability:</strong> Collections can scale horizontally by distributing data across multiple servers or nodes. This distributed approach helps handle large volumes of data and improves performance by parallelizing operations.</li>
+          <li><strong>Security and Access Control:</strong> Collections can have access control mechanisms applied to them, ensuring that only authorized users or applications can read, write, or modify documents within the collection. This enhances data security and privacy.</li>
+        </ol>
+        <h1 class="guide-title">6. Document Overview</h1>
+        <p>Documents in a database are like individual sheets of paper within a folder—they represent individual records or data entities. Here's a brief overview:</p>
+        <ol>
+          <li><strong>Data Representation:</strong> In document-oriented databases like MongoDB, documents are the basic unit of data storage. Each document is a structured data object, typically represented in JSON or BSON format, consisting of key-value pairs.</li>
+          <li><strong>Flexible Structure:</strong> Unlike rows in relational databases, documents within a collection can have varying structures. This flexibility allows for storing complex and nested data structures without a fixed schema, accommodating diverse data types and formats.</li>
+          <li><strong>Atomicity:</strong> Operations on documents are atomic, meaning they either fully succeed or fail without partial changes. This ensures data integrity and consistency, especially in multi-document transactions.</li>
+          <li><strong>Schemaless Design:</strong> Document databases are schemaless or schema-flexible, meaning each document within a collection can have its own unique structure. This makes it easier to evolve the data model over time without needing to modify existing documents.</li>
+          <li><strong>Indexing:</strong> Documents can be indexed to facilitate efficient querying and retrieval. Indexes can be created on individual fields or combinations of fields within a document to optimize query performance.</li>
+          <li><strong>Embedding and Referencing:</strong> Documents can contain nested sub-documents or references to other documents, enabling data denormalization, embedding related information, or establishing relationships between entities.</li>
+          <li><strong>Scalability:</strong> Document-oriented databases support horizontal scalability by distributing data across multiple servers or nodes. This distributed architecture allows for handling large volumes of data and scaling to meet growing demands.</li>
+          <li><strong>Security and Access Control:</strong> Documents can be secured through access control mechanisms to restrict read, write, or modify permissions based on user roles or privileges, ensuring data security and privacy.</li>
+        </ol>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <nav class="container" >
+      <!-- contact -->
+      <div class="contact">
+        <p>Contact Me at:</p>
+        <div id="contact">
+          <a href="https://wa.me/6282116424576"><img class="contact-icons" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707706587/Icons/um6ds2p8qlj0aon3geli.png"></a>
+          <a href="mailto:dankoyuki398@gmail.com"><img class="contact-icons" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707706587/Icons/spnj72w81hi4qeiipofa.png"></a>
+          <a href="https://github.com/Dan-Koyuki"><img class="contact-icons" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707706587/Icons/awcqpfow6aayiyyhygjj.png"></a>
+          <a href="https://discord.gg/avGSJe448r"><img class="contact-icons" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707706587/Icons/mknpgtv4c0byogrueh2q.png"></a>
+        </div>
+      </div>
+      <!-- playstore image -->
+      <div class="contact">
+        <p>Download App at:</p>
+        <a class="playstore-image" href="https://play.google.com/store/apps/details?id=com.assignment.mondrodb">
+          <img src="https://pluspng.com/img-png/get-it-on-google-play-png-apple-and-the-apple-logo-are-trademarks-of-apple-inc-registered-in-the-u-s-and-other-countries-app-store-is-a-service-mark-of-apple-inc-registered-in-826.png" />
+        </a>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="../javascript/burger-menu.js"></script>
+  <script src="../javascript/slider.js"></script>
 </body>
 </html>
