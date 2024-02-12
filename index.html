@@ -17,9 +17,10 @@
         <h1>Atlas Mobilizer</h1>
       </div>
       <div class="menu-container">
-        <a class="burger-menu" href="#" onclick="toggleMenu()">☰</a>
+        <a class="burger-menu" href="#" onclick="toggleMenu()">
+          <img src="https://icon-library.com/images/hamburger-menu-icon-transparent/hamburger-menu-icon-transparent-3.jpg"/>
+        </a>
         <div class="menu-links">
-          <a href="#Intro&AppScreenshot">About</a>
           <a href="./public/html/guide.html">Guide</a>
           <a href="https://dan-koyuki.github.io/Mobile-Native_Atlas-Mobilizer/">Privacy Policy</a>
           <a href="https://dan-koyuki-profile.vercel.app">About Dev</a>
@@ -29,7 +30,7 @@
   </header>
 
   <main>
-    <article id="Intro&AppScreenshot">
+    <article>
       <aside class="intro-container">
         <img src="https://res.cloudinary.com/dankoyuki/image/upload/v1707652649/Atlas%20Mobilizer/xj5o1bioxjppm9ilro4j.png" />
         <div class="intro-description">
@@ -43,27 +44,32 @@
         </div>
       </aside>
 
-      <aside id="carousel">
-        <div id="carousel-inner">
+      <div id="slider-container">
+        <div id="slider" class="slider">
           <!-- image of app in action -->
-          <img id="image 1" src="placeholder" />
-          <img id="image 2" src="placeholder" />
-          <img id="image 3" src="placeholder" />
-          <img id="image 4" src="placeholder" />
-          <img id="image 5" src="placeholder" />
-          <img id="image 6" src="placeholder" />
-          <img id="image 7" src="placeholder" />
+          <aside class="slider-item active">
+            <p>Access MongoDB Atlas Anywhere: Take control of your data from the palm of your hand, allowing you to manage databases with unprecedented ease, whether you're at home, on the move, or chilling with your favorite feline friend.</p>
+            <img id="image 1" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707696779/Atlas%20Mobilizer/bjonypthuprmkdg3xhrz.webp" />
+          </aside>
+          <aside class="slider-item">
+            <img id="image 2" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707696269/Atlas%20Mobilizer/qmaplqogryosy9bsh2dp.webp" />
+            <p>Boost Productivity: With Atlas Mobilizer, say goodbye to cumbersome database tasks. Effortlessly navigate through your MongoDB Atlas collections, making updates and modifications in a snap. Time to level up your productivity game!</p>
+          </aside>
+          <aside class="slider-item">
+            <p>Intuitive Design: We've crafted Atlas Mobilizer with a sleek and intuitive design, ensuring a seamless user experience. It's so user-friendly that even your cat could navigate it!</p>
+            <img id="image 3" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707696773/Atlas%20Mobilizer/vuj2uqotsifuf6cpgn4u.webp" />
+          </aside>
+          <aside class="slider-item">
+            <img id="image 4" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707696776/Atlas%20Mobilizer/cmebblliiowp3z9jcs3k.webp" />
+            <p>Secure & Reliable: Your data's security is our top priority. Atlas Mobilizer ensures a secure connection to your MongoDB Atlas, giving you peace of mind while managing your databases.</p>
+          </aside>
+          <aside class="slider-item">
+            <p>Ready to revolutionize your database management? Download Atlas Mobilizer now and experience the future of MongoDB Atlas on your Android device. Your data, your control - anytime, anywhere! </p>
+            <img id="image 5" src="https://res.cloudinary.com/dankoyuki/image/upload/v1707696777/Atlas%20Mobilizer/i1zotsek54kdcpnxfgun.webp" />
+          </aside>
+          <ul id="dots" class="list-inline dots"></ul>
         </div>
-
-        <div id="carousel-inner2">
-          <!-- Put this along with Screenshot Carousel? -->
-          <p>Access MongoDB Atlas Anywhere: Take control of your data from the palm of your hand, allowing you to manage databases with unprecedented ease, whether you're at home, on the move, or chilling with your favorite feline friend.</p>
-          <p>Boost Productivity: With Atlas Mobilizer, say goodbye to cumbersome database tasks. Effortlessly navigate through your MongoDB Atlas collections, making updates and modifications in a snap. Time to level up your productivity game!</p>
-          <p> Intuitive Design: We've crafted Atlas Mobilizer with a sleek and intuitive design, ensuring a seamless user experience. It's so user-friendly that even your cat could navigate it!</p>
-          <p>Secure & Reliable: Your data's security is our top priority. Atlas Mobilizer ensures a secure connection to your MongoDB Atlas, giving you peace of mind while managing your databases.</p>
-          <p>Ready to revolutionize your database management? Download Atlas Mobilizer now and experience the future of MongoDB Atlas on your Android device. Your data, your control – anytime, anywhere! </p>
-        </div>
-      </aside>
+      </div>
     </article> 
   </main>
 
@@ -81,5 +87,6 @@
   </footer>
 
   <script src="./public/javascript/burger-menu.js"></script>
+  <script src="./public/javascript/slider.js"></script>
 </body>
 </html>
